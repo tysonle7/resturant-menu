@@ -34,7 +34,7 @@ class MenuItem
         menu.MainCourse = "Steak & Lobster";
         menu.Dessert = "Cherry Cheesecake";
 
-        System.Console.WriteLine("Appetizer \n$8");
+        System.Console.WriteLine("Appetizer (New Item) \n$8");
         System.Console.WriteLine("Calamari rings are breaded and fried until golden for a delightful appetizer. \nServed with spicy mayonnaise - " +menu.Appetizer);
        
         System.Console.WriteLine("Main Course \n$60");
@@ -42,5 +42,8 @@ class MenuItem
         
         System.Console.WriteLine("Dessert \n$5");
         System.Console.WriteLine("Thick velvety smooth cream cheese batter baked in a sweet \ngraham craker crust - " +menu.Dessert);
+
+        DateTime now = DateTime.Now;
+        Console.WriteLine(now.ToString());
     }
 }
